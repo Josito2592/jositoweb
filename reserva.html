@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="José Antonio Martín Bonilla"/>
+		<meta name="description" content="Página dedicada al conjunto histórico de la alhambra de Granada"/>
+		<meta name="keywords" content="alhambra, palacio, andalucía, historia"/>
+		<title> La Alhambra </title>
+	<head/>
+	<body>
+		<header> 
+		<div align="center">
+			<table>
+				<tr>
+					<th> <img src="img/logo_con_titulo.png" width="150"/> </th>
+					<th> <h1 align="center"> Alhambra. Patrimonio de la Humanidad <h1/> </th>
+				</tr>
+			</table>
+			<img src="img/cabecera.jpg" width="100%"/>
+		</div>
+		</header>
+		<nav>
+			<table>
+				<tr>
+					<th> <a href="index.html" target="_self"> <img src="img/Inicio.png" width="100%"/> </a> </th>
+					<th> <a href="historia.html" target="_self"> <img src="img/Historia.png" width="100%"/> </a> </th>
+					<th> <a href="visita.html" target="_self"> <img src="img/Visita virtual.png" width="100%"/> </a> </th>
+					<th> <a href="reserva.html" target="_self"> <img src="img/Entradas.png" width="100%"/> </a> </th>
+				</tr>
+			</table>
+		</nav>
+		<div align="center">
+		<h1 >Reserva de entradas</h1>
+		<hr width="100%">
+		<form id="1" action="reservas.php" method="post">
+			<fieldset>
+				<legend>Datos visitante:</legend>
+						<label for "nombre">Nombre:</label>
+							<input  type="text" id="#nombre" name="nombre" maxlength="20" size="30" placeholder="nombre" autofocus><br/>
+						<label for "apellido1">Apellido1:</label>
+							<input  type="text" id="#apellido1" name="apellido1" maxlength="20" size="30" placeholder="primer apellido"><br/>
+						<label for "apellido2">Apellido2:</label>
+							<input  type="text" id="#apellido2" name="apellido2" maxlength="20" size="30" placeholder="segundo apellido"><br/>
+						<label for "dni">D.N.I.:</label>
+							<input  type="text" id="#dni" name="dni" maxlength="10" size="30" placeholder="nº DNI"><br/>
+						<label for "correo">Correo:</label>
+							<input  type="email" id="#correo" name="correo" size="30" placeholder="correo electrónico">
+			</fieldset>
+			<fieldset>
+				<legend>Reserva:</legend>
+						<label for "fecha">Fecha:</label>
+							<input  type="date" id="#fecha" name="fecha"><br/>
+						<label for "hora">Hora:</label>
+							<input  type="time" id="#hora" name="hora"><br/>
+						<label for "visitantes">Visitantes:</label>
+							<input  type="number" id="#visitantes" name="visitantes" value="1" min="1" max="5">
+			</fieldset>
+			<fieldset>
+				<legend>D.N.I. (pdf, jpge o png):</legend>
+						<input type="file" id="#dni-img" name="dni-img">
+			</fieldset>
+			<fieldset>
+				<legend>Finalizar reserva</legend>
+					<input class="botones" class="textobot" type="submit" id="#enviar" name="enviar">
+					<input class="botones" class="textobot" type="reset" id="#restablecer" name="restablecer">
+			</fieldset>
+		</form>
+		</form>
+		</div>
+		<hr width="100%">
+		<footer> 
+			<table>
+				<tr>
+					<th> <a href="index.html" target="_self"> <img src="img/Inicio.png" width="100%"/> </a> </th>
+					<th> <a href="historia.html" target="_self"> <img src="img/Historia.png" width="100%"/> </a> </th>
+					<th> <a href="visita.html" target="_self"> <img src="img/Visita virtual.png" width="100%"/> </a> </th>
+					<th> <a href="reserva.html" target="_self"> <img src="img/Entradas.png" width="100%"/> </a> </th>
+				</tr>
+			</table>
+			<p align="center"> Derechos Reservados © José Antonio Martín Bonilla 2025-2026 <p/> 
+		</footer>
+	</body>
+</html>
+<!-- <dl> <dt>x</dt> <dd>xy</dd> </dt> -->
